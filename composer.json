@@ -1,0 +1,24 @@
+{
+    "name": "bunta/gridHelper",
+    "description": "Nya gridHelper",
+    "keywords": ["grid", "laravel"],
+    "homepage": "https://github.com/buntan/gridHelper",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Artur Anyszek",
+            "email": "a.anyszek@linux.pl"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Bunta\\GridHelper\\": "src/",
+            "Bunta\\GridHelper\\Helpers\\": "src/helpers/"
+        },
+        "classmap": [
+            "tests"
+        ]
+    }
+}
