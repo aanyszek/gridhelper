@@ -58,13 +58,13 @@ class GridHelper {
         );
     }
 
-    public static function ActionButtons($url, $view = true, $edit = true, $delete = true, $edit2 = false) {
+    public static function ActionButtons($url, $view = true, $edit = true, $delete = true, $edit2 = false, $view_path='gridhelper::actionbuttons') {
         return (new FieldConfig)
                         ->setName('id')
                         ->setLabel('Action')
-                        ->setCallback(function ($val, ObjectDataRow $row) use ($url, $view, $edit, $edit2, $delete) {
+                        ->setCallback(function ($val, ObjectDataRow $row) use ($url, $view, $edit, $edit2, $delete,$view_path) {
                             $data = $row->getSrc();
-                            return view('admin.layouts.partial.actionbuttons', compact('url', 'val', 'data', 'view', 'edit', 'edit2', 'delete'));
+                            return view($view_path, compact('url', 'val', 'data', 'view', 'edit', 'edit2', 'delete'));
                         });
     }
 
