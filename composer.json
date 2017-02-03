@@ -1,6 +1,6 @@
 {
-    "name": "bunta/gridHelper",
-    "description": "Nya gridHelper",
+    "name": "bunta/gridhelper",
+    "description": "Nya gridhelper",
     "keywords": ["grid", "laravel"],
     "homepage": "https://github.com/buntan/gridHelper",
     "license": "MIT",
